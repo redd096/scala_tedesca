@@ -42,7 +42,7 @@ func update_card_display():
 	bottom_right_label.text = display_name
 	
 	# Set colors based on suit
-	var color = card_data.get_display_color()	
+	var color = card_data.get_display_color()
 	top_left_label.modulate = color
 	bottom_right_label.modulate = color
 

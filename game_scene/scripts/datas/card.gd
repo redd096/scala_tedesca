@@ -17,7 +17,7 @@ const KING: int = 13
 
 ## Check if card can be used in sequence at position
 func can_follow_in_sequence(other_card: Card, king_is_jolly: bool) -> bool:
-    # Jolly
+	# Jolly
 	if card_number == JOLLY or other_card.card_number == JOLLY:
 		return true
 	# Kings as jolly
