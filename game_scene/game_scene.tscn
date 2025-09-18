@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bemepic5h4obk"]
+
+[ext_resource type="Script" uid="uid://bn6naedpqjyf1" path="res://game_scene/scripts/managers/game_scene_manager.gd" id="1_m1k14"]
+[ext_resource type="Resource" uid="uid://c1qrjdbj54x3g" path="res://game_scene/datas_resources/rules.tres" id="2_3kg8t"]
+
+[node name="GameScene" type="Node"]
+
+[node name="GameSceneManager" type="Node" parent="."]
+script = ExtResource("1_m1k14")
+rules = ExtResource("2_3kg8t")
+metadata/_custom_type_script = "uid://bn6naedpqjyf1"

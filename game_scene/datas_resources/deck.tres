@@ -5,649 +5,649 @@
 
 [sub_resource type="Resource" id="Resource_q77l1"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♥"
 card_seed = 0
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_8rgwm"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♥"
 card_seed = 0
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_jnux5"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♥"
 card_seed = 0
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_40m1q"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♥"
 card_seed = 0
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_632ka"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♥"
 card_seed = 0
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_ps758"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♥"
 card_seed = 0
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_twda2"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♥"
 card_seed = 0
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_36vvi"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♥"
 card_seed = 0
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_b4g1y"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♥"
 card_seed = 0
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_50hs5"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♥"
 card_seed = 0
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_jqc3a"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♥"
 card_seed = 0
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_s3w5j"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♥"
 card_seed = 0
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_k22qs"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♥"
 card_seed = 0
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_y5tn7"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♦"
 card_seed = 1
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_6pmet"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♦"
 card_seed = 1
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_vmi2s"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♦"
 card_seed = 1
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_kfr80"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♦"
 card_seed = 1
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_p0wxi"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♦"
 card_seed = 1
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_uaub3"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♦"
 card_seed = 1
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_q6dr6"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♦"
 card_seed = 1
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_rt6fc"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♦"
 card_seed = 1
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_i4ow7"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♦"
 card_seed = 1
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_6xnld"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♦"
 card_seed = 1
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_1mn43"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♦"
 card_seed = 1
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_0uk2q"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♦"
 card_seed = 1
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_vk82b"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♦"
 card_seed = 1
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_klorq"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♣"
 card_seed = 2
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_8qr0x"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♣"
 card_seed = 2
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_0bt4g"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♣"
 card_seed = 2
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_etry0"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♣"
 card_seed = 2
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_ldvvw"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♣"
 card_seed = 2
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_vbixh"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♣"
 card_seed = 2
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_xmhpc"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♣"
 card_seed = 2
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_x44xr"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♣"
 card_seed = 2
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_6evy4"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♣"
 card_seed = 2
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_sxrig"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♣"
 card_seed = 2
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_xsqaa"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♣"
 card_seed = 2
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_3eyia"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♣"
 card_seed = 2
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_5f0r2"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♣"
 card_seed = 2
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_fjabn"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♠"
 card_seed = 3
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_6le5m"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♠"
 card_seed = 3
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_kcllx"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♠"
 card_seed = 3
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_kagti"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♠"
 card_seed = 3
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_2w8rg"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♠"
 card_seed = 3
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_vpdnr"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♠"
 card_seed = 3
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_0r2r8"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♠"
 card_seed = 3
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_utf8m"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♠"
 card_seed = 3
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_njy4g"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♠"
 card_seed = 3
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_0rwdh"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♠"
 card_seed = 3
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_8t8js"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♠"
 card_seed = 3
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_x4j4d"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♠"
 card_seed = 3
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_e07yb"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♠"
 card_seed = 3
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_m7psx"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♥"
 card_seed = 0
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_54vb8"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♥"
 card_seed = 0
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_6ki3e"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♥"
 card_seed = 0
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_7wnms"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♥"
 card_seed = 0
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_ocig0"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♥"
 card_seed = 0
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_xq4uy"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♥"
 card_seed = 0
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_rvudn"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♥"
 card_seed = 0
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_g1j7n"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♥"
 card_seed = 0
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_sxrgn"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♥"
 card_seed = 0
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_mn68b"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♥"
 card_seed = 0
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_t33tc"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♥"
 card_seed = 0
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_1fbxq"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♥"
 card_seed = 0
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_sqkp6"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♥"
 card_seed = 0
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_xukv6"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♦"
 card_seed = 1
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_ihfe2"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♦"
 card_seed = 1
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_atmwy"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♦"
 card_seed = 1
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_whc3i"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♦"
 card_seed = 1
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_tipxm"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♦"
 card_seed = 1
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_2yh6l"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♦"
 card_seed = 1
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_h7bsi"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♦"
 card_seed = 1
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_5ugi4"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♦"
 card_seed = 1
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_jpa2v"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♦"
 card_seed = 1
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_x12xm"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♦"
 card_seed = 1
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_ohxuw"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♦"
 card_seed = 1
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_repuh"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♦"
 card_seed = 1
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_2cysp"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♦"
 card_seed = 1
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_8rb2x"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♣"
 card_seed = 2
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_h2m5c"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♣"
 card_seed = 2
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_31g7j"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♣"
 card_seed = 2
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_fpbv2"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♣"
 card_seed = 2
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_ckmsb"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♣"
 card_seed = 2
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_mgtdo"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♣"
 card_seed = 2
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_23ftl"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♣"
 card_seed = 2
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_ivwre"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♣"
 card_seed = 2
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_j46qd"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♣"
 card_seed = 2
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_lw3s6"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♣"
 card_seed = 2
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_ac32v"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♣"
 card_seed = 2
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_705ix"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♣"
 card_seed = 2
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_ryyhu"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♣"
 card_seed = 2
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_slifs"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "A♠"
 card_seed = 3
 card_number = 1
 
 [sub_resource type="Resource" id="Resource_um75n"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "2♠"
 card_seed = 3
 card_number = 2
 
 [sub_resource type="Resource" id="Resource_a2lcy"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "3♠"
 card_seed = 3
 card_number = 3
 
 [sub_resource type="Resource" id="Resource_pubq8"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "4♠"
 card_seed = 3
 card_number = 4
 
 [sub_resource type="Resource" id="Resource_e44dm"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "5♠"
 card_seed = 3
 card_number = 5
 
 [sub_resource type="Resource" id="Resource_d4e52"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "6♠"
 card_seed = 3
 card_number = 6
 
 [sub_resource type="Resource" id="Resource_iqg0u"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "7♠"
 card_seed = 3
 card_number = 7
 
 [sub_resource type="Resource" id="Resource_ytppw"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "8♠"
 card_seed = 3
 card_number = 8
 
 [sub_resource type="Resource" id="Resource_rhtsv"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "9♠"
 card_seed = 3
 card_number = 9
 
 [sub_resource type="Resource" id="Resource_ifgk3"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "10♠"
 card_seed = 3
 card_number = 10
 
 [sub_resource type="Resource" id="Resource_u26sd"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "J♠"
 card_seed = 3
 card_number = 11
 
 [sub_resource type="Resource" id="Resource_msjcn"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Q♠"
 card_seed = 3
 card_number = 12
 
 [sub_resource type="Resource" id="Resource_vkiuc"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "K♠"
 card_seed = 3
 card_number = 13
 
 [sub_resource type="Resource" id="Resource_uf3q3"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Joker"
 card_seed = 0
 card_number = 0
 
 [sub_resource type="Resource" id="Resource_0h4ck"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Joker"
 card_seed = 0
 card_number = 0
 
 [sub_resource type="Resource" id="Resource_sw6kh"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Joker"
 card_seed = 0
 card_number = 0
 
 [sub_resource type="Resource" id="Resource_e31cq"]
 script = ExtResource("1_q77l1")
-card_name = ""
+card_name = "Joker"
 card_seed = 0
 card_number = 0
 
