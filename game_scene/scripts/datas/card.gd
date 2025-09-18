@@ -12,6 +12,8 @@ const KING: int = 13
 @export var card_seed: ESeed
 ## 1-13 for normal cards, 0 for jolly
 @export var card_number: int
+@export var front_image: Texture2D
+@export var back_image: Texture2D
 
 ## Check if card can be used in sequence at position
 func can_follow_in_sequence(other_card: Card, king_is_jolly: bool) -> bool:
@@ -49,3 +51,13 @@ func get_display_name() -> String:
 		ESeed.SPADES: symbol = "♠"
 	
 	return base_name + symbol
+
+## Get display color
+func get_display_color() -> Color:
+	if card_number == JOLLY:
+		return Color.GREEN_YELLOW
+	
+	if card_seed in [ESeed.HEARTS, ESeed.DIAMONDS]:
+		return Color.RED
+	
+	return Color.BLACK

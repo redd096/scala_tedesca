@@ -1,0 +1,146 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk2x7qj8v5mn6"]
+
+[ext_resource type="Script" uid="uid://bny2v6nu6dwq0" path="res://card_scene/scripts/card_controller.gd" id="1_card_script"]
+[ext_resource type="Texture2D" uid="uid://x178f744qhuy" path="res://icon.svg" id="2_52tt0"]
+
+[node name="Card" type="Control" node_paths=PackedStringArray("card_front", "card_back", "front_image", "back_image", "top_left_label", "bottom_right_label")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 120.0
+script = ExtResource("1_card_script")
+card_front = NodePath("CardFront")
+card_back = NodePath("CardBack")
+front_image = NodePath("CardFront/FrontBackground")
+back_image = NodePath("CardBack/BackBackground")
+top_left_label = NodePath("CardFront/TopLeftLabel")
+bottom_right_label = NodePath("CardFront/BottomRightLabel")
+
+[node name="CardFront" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FrontBackground" type="TextureRect" parent="CardFront"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_52tt0")
+expand_mode = 1
+
+[node name="Border" type="ColorRect" parent="CardFront"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="InnerArea" type="ColorRect" parent="CardFront/Border"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopLeftLabel" type="Label" parent="CardFront"]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 17.0
+offset_bottom = 29.0
+text = "A♠"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BottomRightLabel" type="Label" parent="CardFront"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -29.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "A♠"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardBack" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackBackground" type="TextureRect" parent="CardBack"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 1
+
+[node name="Border" type="ColorRect" parent="CardBack"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="InnerArea" type="ColorRect" parent="CardBack/Border"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.2, 0.3, 0.8, 1)
+
+[node name="Pattern" type="Label" parent="CardBack"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -10.0
+offset_right = 20.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "★"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,169 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj8yaqk3v2mn8"]
+
+[ext_resource type="Script" uid="uid://etert7npv2bn" path="res://game_scene/scripts/managers/scala_tedesca_controller.gd" id="1_604jw"]
+
+[node name="ScalaTedescaGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_604jw")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.6, 0.3, 1)
+
+[node name="MainContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopArea" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="DrawDeckArea" type="VBoxContainer" parent="MainContainer/TopArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContainer/TopArea/DrawDeckArea"]
+layout_mode = 2
+text = "Draw Deck"
+horizontal_alignment = 1
+
+[node name="DrawDeck" type="HBoxContainer" parent="MainContainer/TopArea/DrawDeckArea"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="OpponentCardsArea" type="VBoxContainer" parent="MainContainer/TopArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContainer/TopArea/OpponentCardsArea"]
+layout_mode = 2
+text = "Opponent Cards"
+horizontal_alignment = 1
+
+[node name="OpponentCards" type="HBoxContainer" parent="MainContainer/TopArea/OpponentCardsArea"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="DiscardDeckArea" type="VBoxContainer" parent="MainContainer/TopArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContainer/TopArea/DiscardDeckArea"]
+layout_mode = 2
+text = "Discard Pile"
+horizontal_alignment = 1
+
+[node name="DiscardDeck" type="HBoxContainer" parent="MainContainer/TopArea/DiscardDeckArea"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="MiddleArea" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LeftOpponentArea" type="VBoxContainer" parent="MainContainer/MiddleArea"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="Label" type="Label" parent="MainContainer/MiddleArea/LeftOpponentArea"]
+layout_mode = 2
+text = "Left Player"
+horizontal_alignment = 1
+
+[node name="LeftOpponentCards" type="VBoxContainer" parent="MainContainer/MiddleArea/LeftOpponentArea"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="PlayArea" type="VBoxContainer" parent="MainContainer/MiddleArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContainer/MiddleArea/PlayArea"]
+layout_mode = 2
+text = "Play Area"
+horizontal_alignment = 1
+
+[node name="PlayAreaBackground" type="ColorRect" parent="MainContainer/MiddleArea/PlayArea"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.15, 0.45, 0.25, 1)
+
+[node name="PlayAreaFlow" type="HFlowContainer" parent="MainContainer/MiddleArea/PlayArea/PlayAreaBackground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RightOpponentArea" type="VBoxContainer" parent="MainContainer/MiddleArea"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="Label" type="Label" parent="MainContainer/MiddleArea/RightOpponentArea"]
+layout_mode = 2
+text = "Right Player"
+horizontal_alignment = 1
+
+[node name="RightOpponentCards" type="VBoxContainer" parent="MainContainer/MiddleArea/RightOpponentArea"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="BottomArea" type="HBoxContainer" parent="MainContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="PlayerHandArea" type="VBoxContainer" parent="MainContainer/BottomArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContainer/BottomArea/PlayerHandArea"]
+layout_mode = 2
+text = "Your Hand"
+horizontal_alignment = 1
+
+[node name="PlayerHand" type="HBoxContainer" parent="MainContainer/BottomArea/PlayerHandArea"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="PozzettoArea" type="VBoxContainer" parent="MainContainer/BottomArea"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="Label" type="Label" parent="MainContainer/BottomArea/PozzettoArea"]
+layout_mode = 2
+text = "Pozzetto"
+horizontal_alignment = 1
+
+[node name="Pozzetto" type="HBoxContainer" parent="MainContainer/BottomArea/PozzettoArea"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
