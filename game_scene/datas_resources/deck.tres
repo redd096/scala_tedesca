@@ -1,0 +1,657 @@
+[gd_resource type="Resource" script_class="Deck" load_steps=111 format=3 uid="uid://bfbaarcex8tru"]
+
+[ext_resource type="Script" uid="uid://b0r1q6ponbrt" path="res://game_scene/scripts/datas/card.gd" id="1_q77l1"]
+[ext_resource type="Script" uid="uid://dn7t7arhfv2kx" path="res://game_scene/scripts/datas/deck.gd" id="2_8rgwm"]
+
+[sub_resource type="Resource" id="Resource_q77l1"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_8rgwm"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_jnux5"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_40m1q"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_632ka"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_ps758"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_twda2"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_36vvi"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_b4g1y"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_50hs5"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_jqc3a"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_s3w5j"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_k22qs"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_y5tn7"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_6pmet"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_vmi2s"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_kfr80"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_p0wxi"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_uaub3"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_q6dr6"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_rt6fc"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_i4ow7"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_6xnld"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_1mn43"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_0uk2q"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_vk82b"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_klorq"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_8qr0x"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_0bt4g"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_etry0"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_ldvvw"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_vbixh"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_xmhpc"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_x44xr"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_6evy4"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_sxrig"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_xsqaa"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_3eyia"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_5f0r2"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_fjabn"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_6le5m"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_kcllx"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_kagti"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_2w8rg"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_vpdnr"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_0r2r8"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_utf8m"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_njy4g"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_0rwdh"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_8t8js"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_x4j4d"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_e07yb"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_m7psx"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_54vb8"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_6ki3e"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_7wnms"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_ocig0"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_xq4uy"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_rvudn"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_g1j7n"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_sxrgn"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_mn68b"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_t33tc"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_1fbxq"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_sqkp6"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_xukv6"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_ihfe2"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_atmwy"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_whc3i"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_tipxm"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_2yh6l"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_h7bsi"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_5ugi4"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_jpa2v"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_x12xm"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_ohxuw"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_repuh"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_2cysp"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 1
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_8rb2x"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_h2m5c"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_31g7j"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_fpbv2"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_ckmsb"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_mgtdo"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_23ftl"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_ivwre"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_j46qd"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_lw3s6"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_ac32v"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_705ix"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_ryyhu"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 2
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_slifs"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 1
+
+[sub_resource type="Resource" id="Resource_um75n"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 2
+
+[sub_resource type="Resource" id="Resource_a2lcy"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 3
+
+[sub_resource type="Resource" id="Resource_pubq8"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 4
+
+[sub_resource type="Resource" id="Resource_e44dm"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 5
+
+[sub_resource type="Resource" id="Resource_d4e52"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 6
+
+[sub_resource type="Resource" id="Resource_iqg0u"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 7
+
+[sub_resource type="Resource" id="Resource_ytppw"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 8
+
+[sub_resource type="Resource" id="Resource_rhtsv"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 9
+
+[sub_resource type="Resource" id="Resource_ifgk3"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 10
+
+[sub_resource type="Resource" id="Resource_u26sd"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 11
+
+[sub_resource type="Resource" id="Resource_msjcn"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 12
+
+[sub_resource type="Resource" id="Resource_vkiuc"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 3
+card_number = 13
+
+[sub_resource type="Resource" id="Resource_uf3q3"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 0
+
+[sub_resource type="Resource" id="Resource_0h4ck"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 0
+
+[sub_resource type="Resource" id="Resource_sw6kh"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 0
+
+[sub_resource type="Resource" id="Resource_e31cq"]
+script = ExtResource("1_q77l1")
+card_name = ""
+card_seed = 0
+card_number = 0
+
+[resource]
+script = ExtResource("2_8rgwm")
+cards = Array[ExtResource("1_q77l1")]([SubResource("Resource_q77l1"), SubResource("Resource_8rgwm"), SubResource("Resource_jnux5"), SubResource("Resource_40m1q"), SubResource("Resource_632ka"), SubResource("Resource_ps758"), SubResource("Resource_twda2"), SubResource("Resource_36vvi"), SubResource("Resource_b4g1y"), SubResource("Resource_50hs5"), SubResource("Resource_jqc3a"), SubResource("Resource_s3w5j"), SubResource("Resource_k22qs"), SubResource("Resource_y5tn7"), SubResource("Resource_6pmet"), SubResource("Resource_vmi2s"), SubResource("Resource_kfr80"), SubResource("Resource_p0wxi"), SubResource("Resource_uaub3"), SubResource("Resource_q6dr6"), SubResource("Resource_rt6fc"), SubResource("Resource_i4ow7"), SubResource("Resource_6xnld"), SubResource("Resource_1mn43"), SubResource("Resource_0uk2q"), SubResource("Resource_vk82b"), SubResource("Resource_klorq"), SubResource("Resource_8qr0x"), SubResource("Resource_0bt4g"), SubResource("Resource_etry0"), SubResource("Resource_ldvvw"), SubResource("Resource_vbixh"), SubResource("Resource_xmhpc"), SubResource("Resource_x44xr"), SubResource("Resource_6evy4"), SubResource("Resource_sxrig"), SubResource("Resource_xsqaa"), SubResource("Resource_3eyia"), SubResource("Resource_5f0r2"), SubResource("Resource_fjabn"), SubResource("Resource_6le5m"), SubResource("Resource_kcllx"), SubResource("Resource_kagti"), SubResource("Resource_2w8rg"), SubResource("Resource_vpdnr"), SubResource("Resource_0r2r8"), SubResource("Resource_utf8m"), SubResource("Resource_njy4g"), SubResource("Resource_0rwdh"), SubResource("Resource_8t8js"), SubResource("Resource_x4j4d"), SubResource("Resource_e07yb"), SubResource("Resource_m7psx"), SubResource("Resource_54vb8"), SubResource("Resource_6ki3e"), SubResource("Resource_7wnms"), SubResource("Resource_ocig0"), SubResource("Resource_xq4uy"), SubResource("Resource_rvudn"), SubResource("Resource_g1j7n"), SubResource("Resource_sxrgn"), SubResource("Resource_mn68b"), SubResource("Resource_t33tc"), SubResource("Resource_1fbxq"), SubResource("Resource_sqkp6"), SubResource("Resource_xukv6"), SubResource("Resource_ihfe2"), SubResource("Resource_atmwy"), SubResource("Resource_whc3i"), SubResource("Resource_tipxm"), SubResource("Resource_2yh6l"), SubResource("Resource_h7bsi"), SubResource("Resource_5ugi4"), SubResource("Resource_jpa2v"), SubResource("Resource_x12xm"), SubResource("Resource_ohxuw"), SubResource("Resource_repuh"), SubResource("Resource_2cysp"), SubResource("Resource_8rb2x"), SubResource("Resource_h2m5c"), SubResource("Resource_31g7j"), SubResource("Resource_fpbv2"), SubResource("Resource_ckmsb"), SubResource("Resource_mgtdo"), SubResource("Resource_23ftl"), SubResource("Resource_ivwre"), SubResource("Resource_j46qd"), SubResource("Resource_lw3s6"), SubResource("Resource_ac32v"), SubResource("Resource_705ix"), SubResource("Resource_ryyhu"), SubResource("Resource_slifs"), SubResource("Resource_um75n"), SubResource("Resource_a2lcy"), SubResource("Resource_pubq8"), SubResource("Resource_e44dm"), SubResource("Resource_d4e52"), SubResource("Resource_iqg0u"), SubResource("Resource_ytppw"), SubResource("Resource_rhtsv"), SubResource("Resource_ifgk3"), SubResource("Resource_u26sd"), SubResource("Resource_msjcn"), SubResource("Resource_vkiuc"), SubResource("Resource_uf3q3"), SubResource("Resource_0h4ck"), SubResource("Resource_sw6kh"), SubResource("Resource_e31cq")])
+metadata/_custom_type_script = "uid://dn7t7arhfv2kx"

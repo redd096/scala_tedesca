@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Rules" load_steps=2 format=3 uid="uid://c1qrjdbj54x3g"]
+
+[ext_resource type="Script" uid="uid://c3rigj7424xsw" path="res://game_scene/scripts/datas/rules.gd" id="1_otl6v"]
+
+[resource]
+script = ExtResource("1_otl6v")
+king_is_jolly = true
+metadata/_custom_type_script = "uid://c3rigj7424xsw"
