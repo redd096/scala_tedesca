@@ -4,6 +4,15 @@ class_name Deck extends Resource
 # Godot already handle runtime resources to avoid edit them in the project
 @export var cards: Array[Card] = []
 
+#region editor
+
+@export_group("Editor DEBUG")
+
+@export var front_card_image_red: Texture2D
+@export var front_card_image_blue: Texture2D
+@export var back_card_image_red: Texture2D
+@export var back_card_image_blue: Texture2D
+
 # Button to show in inspector. Remember to add @tool on the top of the script.
 # First string is the name, 
 # second string is a texture from https://godot-editor-icons.github.io/
@@ -20,18 +29,23 @@ func _editor_create_full_deck():
 	for deck_num in range(2):
 		for suit in Card.ESeed.values():
 			for number in range(1, 14): # 1-13
-				var card :Card = Card.new()
-				card.card_seed = suit
-				card.card_number = number
-				card.card_name = card.get_display_name()
-				cards.append(card)
+				_editor_create_card(suit, number)
 
 	# Add 4 jokers
 	for i in range(4):
-		var jolly := Card.new()
-		jolly.card_number = Card.JOLLY
-		jolly.card_name = jolly.get_display_name()
-		cards.append(jolly)
+		var suit = Card.ESeed.values()[i % Card.ESeed.values().size()]
+		_editor_create_card(suit, Card.JOLLY)
+
+func _editor_create_card(suit: Card.ESeed, number: int):
+	var card :Card = Card.new()
+	card.card_seed = suit
+	card.card_number = number
+	card.card_name = card.get_display_name()
+	card.front_image = front_card_image_red if suit == Card.ESeed.HEARTS or suit == Card.ESeed.DIAMONDS else front_card_image_blue
+	card.back_image = back_card_image_red if suit == Card.ESeed.HEARTS or suit == Card.ESeed.DIAMONDS else back_card_image_blue
+	cards.append(card)
+
+#endregion
 
 ## Shuffle deck cards
 func shuffle():
@@ -45,7 +59,8 @@ func shuffle():
 
 ## Get first card in the list or null if empty
 func draw_card() -> Card:
-	return cards.pop_front()
+	# return cards.pop_front()
+	return cards.pop_back()
 
 ## Add card to the list
 func add_card(card: Card):

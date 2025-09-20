@@ -54,10 +54,10 @@ func get_display_name() -> String:
 
 ## Get display color
 func get_display_color() -> Color:
-	if card_number == JOLLY:
-		return Color.GREEN_YELLOW
+	# if card_number == JOLLY:
+	# 	return Color.GREEN_YELLOW
 	
-	if card_seed in [ESeed.HEARTS, ESeed.DIAMONDS]:
+	if card_seed == ESeed.HEARTS or card_seed == ESeed.DIAMONDS:
 		return Color.RED
 	
-	return Color.BLACK
+	return Color.BLUE
