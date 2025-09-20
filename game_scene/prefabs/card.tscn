@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://bk2x7qj8v5mn6"]
 
-[ext_resource type="Script" uid="uid://bny2v6nu6dwq0" path="res://card_scene/scripts/card_controller.gd" id="1_card_script"]
-[ext_resource type="Texture2D" uid="uid://x178f744qhuy" path="res://icon.svg" id="2_52tt0"]
+[ext_resource type="Script" uid="uid://bny2v6nu6dwq0" path="res://game_scene/scripts/prefabs_controllers/card_controller.gd" id="1_pvvkm"]
+[ext_resource type="Texture2D" uid="uid://x178f744qhuy" path="res://icon.svg" id="2_52f6k"]
 
 [node name="Card" type="Control" node_paths=PackedStringArray("card_front", "card_back", "front_image", "back_image", "top_left_label", "bottom_right_label")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 80.0
 offset_bottom = 120.0
-script = ExtResource("1_card_script")
+script = ExtResource("1_pvvkm")
 card_front = NodePath("CardFront")
 card_back = NodePath("CardBack")
 front_image = NodePath("CardFront/FrontBackground")
@@ -31,7 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_52tt0")
+texture = ExtResource("2_52f6k")
 expand_mode = 1
 
 [node name="Border" type="ColorRect" parent="CardFront"]

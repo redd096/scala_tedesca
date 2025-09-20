@@ -1,17 +1,17 @@
 class_name ScalaTedescaController extends Control
 
-# Scene references for the card scene
-@export var card_scene: PackedScene = preload("res://card_scene/card.tscn")
+# Prefabs
+@export var card_scene: PackedScene
 
-# Node references
-@onready var draw_deck_container: HBoxContainer = $MainContainer/TopArea/DrawDeckArea/DrawDeck
-@onready var discard_deck_container: HBoxContainer = $MainContainer/TopArea/DiscardDeckArea/DiscardDeck
-@onready var opponent_cards_container: HBoxContainer = $MainContainer/TopArea/OpponentCardsArea/OpponentCards
-@onready var left_opponent_container: VBoxContainer = $MainContainer/MiddleArea/LeftOpponentArea/LeftOpponentCards
-@onready var right_opponent_container: VBoxContainer = $MainContainer/MiddleArea/RightOpponentArea/RightOpponentCards
-@onready var play_area_flow: HFlowContainer = $MainContainer/MiddleArea/PlayArea/PlayAreaBackground/PlayAreaFlow
-@onready var player_hand_container: HBoxContainer = $MainContainer/BottomArea/PlayerHandArea/PlayerHand
-@onready var pozzetto_container: HBoxContainer = $MainContainer/BottomArea/PozzettoArea/Pozzetto
+# UI references
+@export var draw_deck_container: HBoxContainer
+@export var discard_deck_container: HBoxContainer
+@export var opponent_cards_container: HBoxContainer
+@export var left_opponent_container: VBoxContainer
+@export var right_opponent_container: VBoxContainer
+@export var play_area_flow: HFlowContainer
+@export var player_hand_container: HBoxContainer
+@export var pozzetto_container: HBoxContainer
 
 # Game data
 var deck: Deck
