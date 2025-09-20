@@ -1,19 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://cj8yaqk3v2mn8"]
+[gd_scene load_steps=5 format=3 uid="uid://bfp5tsme4tyhe"]
 
-[ext_resource type="Theme" uid="uid://dqr516vkuq3mp" path="res://game_scene/themes/scala_tedesca_theme.tres" id="1_4joqd"]
-[ext_resource type="Script" uid="uid://etert7npv2bn" path="res://game_scene/scripts/prefabs_controllers/scala_tedesca_controller.gd" id="1_shovc"]
-[ext_resource type="PackedScene" uid="uid://bk2x7qj8v5mn6" path="res://game_scene/prefabs/card.tscn" id="2_xbyoe"]
+[ext_resource type="Theme" uid="uid://dqr516vkuq3mp" path="res://game_scene/themes/scala_tedesca_theme.tres" id="1_bwte8"]
+[ext_resource type="Script" uid="uid://etert7npv2bn" path="res://game_scene/scripts/prefabs_controllers/test_scala_tedesca.gd" id="2_0wx8q"]
+[ext_resource type="PackedScene" uid="uid://bk2x7qj8v5mn6" path="res://game_scene/prefabs/card.tscn" id="3_c5wgr"]
+[ext_resource type="Texture2D" uid="uid://ml1lwcwx3b7u" path="res://game_scene/textures/mockup_scala_40.webp" id="4_ed6sx"]
 
-[node name="ScalaTedescaUI" type="Control" node_paths=PackedStringArray("draw_deck_container", "discard_deck_container", "opponent_cards_container", "left_opponent_container", "right_opponent_container", "play_area_flow", "player_hand_container", "pozzetto_container")]
+[node name="GameUI" type="Control" node_paths=PackedStringArray("draw_deck_container", "discard_deck_container", "opponent_cards_container", "left_opponent_container", "right_opponent_container", "play_area_flow", "player_hand_container", "pozzetto_container")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_4joqd")
-script = ExtResource("1_shovc")
-card_scene = ExtResource("2_xbyoe")
+theme = ExtResource("1_bwte8")
+script = ExtResource("2_0wx8q")
+card_scene = ExtResource("3_c5wgr")
 draw_deck_container = NodePath("MainContainer/TopArea/DrawDeckArea/DrawDeck")
 discard_deck_container = NodePath("MainContainer/TopArea/DiscardDeckArea/DiscardDeck")
 opponent_cards_container = NodePath("MainContainer/TopArea/OpponentCardsArea/OpponentCards")
@@ -176,14 +177,12 @@ layout_mode = 2
 size_flags_vertical = 3
 alignment = 1
 
-[node name="Control" type="Control" parent="."]
+[node name="Mockup" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 50.0
-offset_top = 50.0
-offset_right = -50.0
-offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("4_ed6sx")
+expand_mode = 1

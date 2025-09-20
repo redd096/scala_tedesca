@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvdbqx7bhuugt"]
+
+[ext_resource type="Script" uid="uid://bmrt6f1gqqyxo" path="res://game_scene/scripts/prefabs_controllers/player_cards_controller.gd" id="1_d1l1r"]
+[ext_resource type="Texture2D" uid="uid://4pidu3mb6ni1" path="res://game_scene/textures/front_card_red.png" id="2_rr5q2"]
+
+[node name="PlayerCards" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 120.0
+script = ExtResource("1_d1l1r")
+
+[node name="CardFront" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FrontBackground" type="TextureRect" parent="CardFront"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rr5q2")
+expand_mode = 1
+
+[node name="Border" type="ColorRect" parent="CardFront"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="InnerArea" type="ColorRect" parent="CardFront/Border"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopLeftLabel" type="Label" parent="CardFront"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 17.0
+offset_bottom = 29.0
+text = "A♥"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BottomRightLabel" type="Label" parent="CardFront"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -29.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "A♥"
+horizontal_alignment = 1
+vertical_alignment = 1

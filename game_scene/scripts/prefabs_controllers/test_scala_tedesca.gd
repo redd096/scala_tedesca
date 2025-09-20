@@ -1,4 +1,4 @@
-class_name ScalaTedescaController extends Control
+class_name TestScalaTedesca extends Control
 
 # Prefabs
 @export var card_scene: PackedScene

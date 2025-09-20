@@ -62,6 +62,13 @@ func draw_card() -> Card:
 	# return cards.pop_front()
 	return cards.pop_back()
 
+## Draw multiple cards
+func draw_cards(count: int) -> Array[Card]:
+	var drawn_cards: Array[Card] = []
+	for i in range(count):
+		drawn_cards.append(draw_card())
+	return drawn_cards
+
 ## Add card to the list
 func add_card(card: Card):
 	cards.append(card)
