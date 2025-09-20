@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk2x7qj8v5mn6"]
+[gd_scene load_steps=4 format=3 uid="uid://bk2x7qj8v5mn6"]
 
 [ext_resource type="Script" uid="uid://bny2v6nu6dwq0" path="res://game_scene/scripts/prefabs_controllers/card_controller.gd" id="1_pvvkm"]
-[ext_resource type="Texture2D" uid="uid://x178f744qhuy" path="res://icon.svg" id="2_52f6k"]
+[ext_resource type="Texture2D" uid="uid://e2bw70nln230" path="res://game_scene/textures/back_card_red.png" id="2_ho0u6"]
+[ext_resource type="Texture2D" uid="uid://4pidu3mb6ni1" path="res://game_scene/textures/front_card_red.png" id="3_la2fe"]
 
 [node name="Card" type="Control" node_paths=PackedStringArray("card_front", "card_back", "front_image", "back_image", "top_left_label", "bottom_right_label")]
 layout_mode = 3
@@ -31,7 +32,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_52f6k")
+texture = ExtResource("3_la2fe")
 expand_mode = 1
 
 [node name="Border" type="ColorRect" parent="CardFront"]
@@ -59,16 +60,18 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="TopLeftLabel" type="Label" parent="CardFront"]
+modulate = Color(1, 0, 0, 1)
 layout_mode = 1
 offset_left = 6.0
 offset_top = 6.0
 offset_right = 17.0
 offset_bottom = 29.0
-text = "A♠"
+text = "A♥"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BottomRightLabel" type="Label" parent="CardFront"]
+modulate = Color(1, 0, 0, 1)
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -81,7 +84,7 @@ offset_right = -6.0
 offset_bottom = -6.0
 grow_horizontal = 0
 grow_vertical = 0
-text = "A♠"
+text = "A♥"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -101,7 +104,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-stretch_mode = 1
+texture = ExtResource("2_ho0u6")
+expand_mode = 1
 
 [node name="Border" type="ColorRect" parent="CardBack"]
 visible = false

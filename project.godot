@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="scala_tedesca"
-run/main_scene="uid://cj8yaqk3v2mn8"
+run/main_scene="uid://bemepic5h4obk"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

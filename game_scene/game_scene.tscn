@@ -1,11 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://bemepic5h4obk"]
+[gd_scene load_steps=6 format=3 uid="uid://bemepic5h4obk"]
 
 [ext_resource type="Script" uid="uid://bn6naedpqjyf1" path="res://game_scene/scripts/managers/game_scene_manager.gd" id="1_m1k14"]
 [ext_resource type="Resource" uid="uid://c1qrjdbj54x3g" path="res://game_scene/datas_resources/rules.tres" id="2_3kg8t"]
+[ext_resource type="Script" uid="uid://bman8yqr3yymb" path="res://game_scene/scripts/managers/game_scene_sm/game_scene_sm.gd" id="3_k340r"]
+[ext_resource type="Script" uid="uid://djpserxi4m3g3" path="res://game_scene/scripts/managers/game_scene_sm/initialization_game_scene_state.gd" id="4_e0oqy"]
+[ext_resource type="PackedScene" uid="uid://cj8yaqk3v2mn8" path="res://game_scene/prefabs/scala_tedesca_ui.tscn" id="5_e0oqy"]
 
 [node name="GameScene" type="Node"]
 
-[node name="GameSceneManager" type="Node" parent="."]
+[node name="GameSceneManager" type="Node" parent="." node_paths=PackedStringArray("ui_controller")]
 script = ExtResource("1_m1k14")
 rules = ExtResource("2_3kg8t")
+ui_controller = NodePath("../ScalaTedescaUI")
 metadata/_custom_type_script = "uid://bn6naedpqjyf1"
+
+[node name="GameSceneSM" type="Node" parent="." node_paths=PackedStringArray("initialization_state")]
+script = ExtResource("3_k340r")
+initialization_state = NodePath("InitializationGameSceneState")
+metadata/_custom_type_script = "uid://bman8yqr3yymb"
+
+[node name="InitializationGameSceneState" type="Node" parent="GameSceneSM"]
+script = ExtResource("4_e0oqy")
+metadata/_custom_type_script = "uid://djpserxi4m3g3"
+
+[node name="ScalaTedescaUI" parent="." instance=ExtResource("5_e0oqy")]
