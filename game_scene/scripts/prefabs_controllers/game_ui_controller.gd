@@ -42,6 +42,7 @@ func instantiate_players(players_count: int):
 
 func _instantiate_player(player_index: int, player_container: Control):
 	var player_ui : PlayerCardsController = player_cards_prefab.instantiate()
+	player_ui.set_player_name(str("Player ", player_index + 1))
 	player_container.add_child.call_deferred(player_ui)
 	players_in_scene[player_index] = player_ui
 
