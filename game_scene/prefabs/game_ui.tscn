@@ -218,4 +218,34 @@ grow_horizontal = 2
 [node name="CardsScroll" parent="BottomPlayerContainer/PlayerCards" index="3"]
 visible = false
 
+[node name="LeftPlayersContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 100.0
+grow_vertical = 2
+alignment = 1
+
+[node name="BottomPlayerContainer2" type="PanelContainer" parent="LeftPlayersContainer"]
+layout_mode = 2
+
+[node name="PlayerCards" parent="LeftPlayersContainer/BottomPlayerContainer2" instance=ExtResource("5_c5wgr")]
+layout_mode = 2
+
+[node name="Player_VBoxContainer" parent="LeftPlayersContainer/BottomPlayerContainer2/PlayerCards" index="0"]
+offset_top = 32.0
+offset_bottom = 134.0
+
+[node name="OverflowContainer" parent="LeftPlayersContainer/BottomPlayerContainer2/PlayerCards" index="1"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_right = 50.0
+grow_horizontal = 2
+
+[node name="CardsScroll" parent="LeftPlayersContainer/BottomPlayerContainer2/PlayerCards" index="3"]
+visible = false
+
 [editable path="BottomPlayerContainer/PlayerCards"]
+[editable path="LeftPlayersContainer/BottomPlayerContainer2/PlayerCards"]

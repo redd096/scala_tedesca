@@ -43,6 +43,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="TurnIcon" type="ColorRect" parent="Player_VBoxContainer/TurnIconContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 color = Color(1, 1, 0.12549, 1)
