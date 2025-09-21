@@ -1,10 +1,15 @@
 [gd_resource type="Theme" format=3 uid="uid://c1c3r7wvm3hf5"]
 
 [resource]
-LabelNumber/base_type = &"Label"
-LabelNumber/colors/font_color = Color(0, 0, 0, 1)
-LabelNumber/font_sizes/font_size = 14
-MarginContainer/constants/margin_bottom = 2
-MarginContainer/constants/margin_left = 2
-MarginContainer/constants/margin_right = 2
-MarginContainer/constants/margin_top = 2
+LabelCounter/base_type = &"Label"
+LabelCounter/colors/font_color = Color(0, 0, 0, 1)
+LabelCounter/font_sizes/font_size = 20
+LabelPlayerName/base_type = &"Label"
+LabelPlayerName/font_sizes/font_size = 20
+MarginCounter/base_type = &"MarginContainer"
+MarginCounter/constants/margin_bottom = 2
+MarginCounter/constants/margin_left = 2
+MarginCounter/constants/margin_right = 2
+MarginCounter/constants/margin_top = 2
+PlayerVertical/base_type = &"VBoxContainer"
+PlayerVertical/constants/separation = 18

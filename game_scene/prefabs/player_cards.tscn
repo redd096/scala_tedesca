@@ -10,12 +10,12 @@
 [node name="PlayerCards" type="Control" node_paths=PackedStringArray("name_label", "turn_icon", "pozzetto_container", "cards_container_obj", "cards_container", "overflow_container_obj", "overflow_counter_label")]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 160.0
-offset_bottom = 170.0
+offset_right = 230.0
+offset_bottom = 307.0
 theme = ExtResource("1_rr5q2")
 script = ExtResource("1_d1l1r")
 name_label = NodePath("Player_VBoxContainer/NameLabel")
-turn_icon = NodePath("Player_VBoxContainer/CenterContainer/TurnIcon")
+turn_icon = NodePath("Player_VBoxContainer/TurnIconContainer/TurnIcon")
 pozzetto_container = NodePath("PozzettoContainer")
 cards_container_obj = NodePath("CardsScroll")
 cards_container = NodePath("CardsScroll/CardsContainer")
@@ -23,28 +23,31 @@ overflow_container_obj = NodePath("OverflowContainer")
 overflow_counter_label = NodePath("OverflowContainer/Outline/MarginContainer/Background/OverflowCounterLabel")
 
 [node name="Player_VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 62.0
-offset_bottom = 67.0
+layout_mode = 1
+offset_right = 90.0
+offset_bottom = 102.0
+theme_type_variation = &"PlayerVertical"
 
 [node name="NameLabel" type="Label" parent="Player_VBoxContainer"]
 layout_mode = 2
+theme_type_variation = &"LabelPlayerName"
 text = "Player 4"
+horizontal_alignment = 1
 
-[node name="CenterContainer" type="AspectRatioContainer" parent="Player_VBoxContainer"]
+[node name="TurnIconContainer" type="AspectRatioContainer" parent="Player_VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="BackgroundColor" type="ColorRect" parent="Player_VBoxContainer/CenterContainer"]
+[node name="BackgroundColor" type="ColorRect" parent="Player_VBoxContainer/TurnIconContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TurnIcon" type="ColorRect" parent="Player_VBoxContainer/CenterContainer"]
+[node name="TurnIcon" type="ColorRect" parent="Player_VBoxContainer/TurnIconContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 color = Color(1, 1, 0.12549, 1)
 
-[node name="TextureRect" type="TextureRect" parent="Player_VBoxContainer/CenterContainer"]
+[node name="TextureRect" type="TextureRect" parent="Player_VBoxContainer/TurnIconContainer"]
 layout_mode = 2
 texture = ExtResource("2_kr6ql")
 expand_mode = 1
@@ -55,9 +58,8 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -80.0
-offset_right = 50.0
-offset_bottom = -5.0
+offset_top = -145.0
+offset_right = 100.0
 grow_vertical = 0
 
 [node name="Card" parent="OverflowContainer" instance=ExtResource("3_rr5q2")]
@@ -68,10 +70,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -17.0
-offset_top = -16.0
-offset_right = 15.0
-offset_bottom = 16.0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
 grow_horizontal = 2
 texture = ExtResource("4_rr5q2")
 expand_mode = 1
@@ -83,6 +85,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_type_variation = &"MarginCounter"
 
 [node name="Background" type="TextureRect" parent="OverflowContainer/Outline/MarginContainer"]
 layout_mode = 2
@@ -96,30 +99,32 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_type_variation = &"LabelNumber"
+theme_type_variation = &"LabelCounter"
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="PozzettoContainer" type="Control" parent="."]
-anchors_preset = 0
-offset_left = 78.0
-offset_right = 128.0
-offset_bottom = 75.0
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_bottom = 145.0
+grow_horizontal = 0
 
 [node name="Card" parent="PozzettoContainer" instance=ExtResource("3_rr5q2")]
 layout_mode = 1
 
 [node name="Outline" type="TextureRect" parent="PozzettoContainer"]
-visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -17.0
-offset_top = -16.0
-offset_right = 15.0
-offset_bottom = 16.0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
 grow_horizontal = 2
 texture = ExtResource("4_rr5q2")
 expand_mode = 1
@@ -131,6 +136,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_type_variation = &"MarginCounter"
 
 [node name="Background" type="TextureRect" parent="PozzettoContainer/Outline/MarginContainer"]
 layout_mode = 2
@@ -144,23 +150,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_type_variation = &"LabelNumber"
+theme_type_variation = &"LabelCounter"
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CardsScroll" type="ScrollContainer" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -80.0
-offset_bottom = 3.0
+offset_top = -145.0
 grow_horizontal = 2
 grow_vertical = 0
-horizontal_scroll_mode = 4
+horizontal_scroll_mode = 3
 vertical_scroll_mode = 0
 
 [node name="CardsContainer" type="HBoxContainer" parent="CardsScroll"]
