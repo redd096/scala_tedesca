@@ -1,82 +1,199 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvdbqx7bhuugt"]
+[gd_scene load_steps=7 format=3 uid="uid://dvdbqx7bhuugt"]
 
 [ext_resource type="Script" uid="uid://bmrt6f1gqqyxo" path="res://game_scene/scripts/prefabs_controllers/player_cards_controller.gd" id="1_d1l1r"]
-[ext_resource type="Texture2D" uid="uid://4pidu3mb6ni1" path="res://game_scene/textures/front_card_red.png" id="2_rr5q2"]
+[ext_resource type="Theme" uid="uid://c1c3r7wvm3hf5" path="res://game_scene/themes/player_cards_theme.tres" id="1_rr5q2"]
+[ext_resource type="Texture2D" uid="uid://b4fdh16sa1tfh" path="res://game_scene/textures/player_icon.png" id="2_kr6ql"]
+[ext_resource type="PackedScene" uid="uid://bk2x7qj8v5mn6" path="res://game_scene/prefabs/card.tscn" id="3_rr5q2"]
+[ext_resource type="Texture2D" uid="uid://dt6bul5nng0yd" path="res://game_scene/textures/black_circle.tres" id="4_rr5q2"]
+[ext_resource type="Texture2D" uid="uid://lxa3o8mrue7e" path="res://game_scene/textures/white_circle.tres" id="5_kg8av"]
 
-[node name="PlayerCards" type="Control"]
+[node name="PlayerCards" type="Control" node_paths=PackedStringArray("name_label", "turn_icon", "pozzetto_container", "cards_container_obj", "cards_container", "overflow_container_obj", "overflow_counter_label")]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 80.0
-offset_bottom = 120.0
+offset_right = 160.0
+offset_bottom = 170.0
+theme = ExtResource("1_rr5q2")
 script = ExtResource("1_d1l1r")
+name_label = NodePath("Player_VBoxContainer/NameLabel")
+turn_icon = NodePath("Player_VBoxContainer/CenterContainer/TurnIcon")
+pozzetto_container = NodePath("PozzettoContainer")
+cards_container_obj = NodePath("CardsScroll")
+cards_container = NodePath("CardsScroll/CardsContainer")
+overflow_container_obj = NodePath("OverflowContainer")
+overflow_counter_label = NodePath("OverflowContainer/Outline/MarginContainer/Background/OverflowCounterLabel")
 
-[node name="CardFront" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Player_VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 62.0
+offset_bottom = 67.0
 
-[node name="FrontBackground" type="TextureRect" parent="CardFront"]
+[node name="NameLabel" type="Label" parent="Player_VBoxContainer"]
+layout_mode = 2
+text = "Player 4"
+
+[node name="CenterContainer" type="AspectRatioContainer" parent="Player_VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BackgroundColor" type="ColorRect" parent="Player_VBoxContainer/CenterContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TurnIcon" type="ColorRect" parent="Player_VBoxContainer/CenterContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(1, 1, 0.12549, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Player_VBoxContainer/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("2_kr6ql")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="OverflowContainer" type="Control" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 2
+anchor_top = 1.0
 anchor_bottom = 1.0
+offset_top = -80.0
+offset_right = 50.0
+offset_bottom = -5.0
+grow_vertical = 0
+
+[node name="Card" parent="OverflowContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 1
+
+[node name="Outline" type="TextureRect" parent="OverflowContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -17.0
+offset_top = -16.0
+offset_right = 15.0
+offset_bottom = 16.0
 grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_rr5q2")
+texture = ExtResource("4_rr5q2")
 expand_mode = 1
 
-[node name="Border" type="ColorRect" parent="CardFront"]
-visible = false
+[node name="MarginContainer" type="MarginContainer" parent="OverflowContainer/Outline"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-color = Color(0, 0, 0, 1)
 
-[node name="InnerArea" type="ColorRect" parent="CardFront/Border"]
+[node name="Background" type="TextureRect" parent="OverflowContainer/Outline/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("5_kg8av")
+expand_mode = 1
+
+[node name="OverflowCounterLabel" type="Label" parent="OverflowContainer/Outline/MarginContainer/Background"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = -2.0
-offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-
-[node name="TopLeftLabel" type="Label" parent="CardFront"]
-modulate = Color(1, 0, 0, 1)
-layout_mode = 1
-offset_left = 6.0
-offset_top = 6.0
-offset_right = 17.0
-offset_bottom = 29.0
-text = "A♥"
+theme_type_variation = &"LabelNumber"
+text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BottomRightLabel" type="Label" parent="CardFront"]
-modulate = Color(1, 0, 0, 1)
+[node name="PozzettoContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 78.0
+offset_right = 128.0
+offset_bottom = 75.0
+
+[node name="Card" parent="PozzettoContainer" instance=ExtResource("3_rr5q2")]
 layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
+
+[node name="Outline" type="TextureRect" parent="PozzettoContainer"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -17.0
+offset_top = -16.0
+offset_right = 15.0
+offset_bottom = 16.0
+grow_horizontal = 2
+texture = ExtResource("4_rr5q2")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="PozzettoContainer/Outline"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="PozzettoContainer/Outline/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("5_kg8av")
+expand_mode = 1
+
+[node name="OverflowCounterLabel" type="Label" parent="PozzettoContainer/Outline/MarginContainer/Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"LabelNumber"
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardsScroll" type="ScrollContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -31.0
-offset_top = -29.0
-offset_right = -6.0
-offset_bottom = -6.0
-grow_horizontal = 0
+offset_top = -80.0
+offset_bottom = 3.0
+grow_horizontal = 2
 grow_vertical = 0
-text = "A♥"
-horizontal_alignment = 1
-vertical_alignment = 1
+horizontal_scroll_mode = 4
+vertical_scroll_mode = 0
+
+[node name="CardsContainer" type="HBoxContainer" parent="CardsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Card" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card2" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card3" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card4" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card5" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card6" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card7" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card8" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card9" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2
+
+[node name="Card10" parent="CardsScroll/CardsContainer" instance=ExtResource("3_rr5q2")]
+layout_mode = 2

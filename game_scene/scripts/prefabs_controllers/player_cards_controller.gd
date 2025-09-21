@@ -1,7 +1,7 @@
 class_name PlayerCardsController extends Node
 
 @export var name_label: Label
-@export var turn_icon: TextureRect
+@export var turn_icon: Control
 @export var pozzetto_container: Control
 @export_group("Cards in hand")
 ## When exceed this number of cards, use Overflow Container
@@ -46,16 +46,6 @@ func remove_hand_card(card_ui: CardController):
 	# and be sure to show correct container
 	_show_correct_container()
 
-## Add card in pozzetto
-func add_pozzetto_card(card_ui: CardController):
-	pozzetto_container.add_child(card_ui)
-	pozzetto_cards.append(card_ui)
-
-## Remove card in pozzetto
-func remove_pozzetto_card(card_ui: CardController):
-	pozzetto_container.remove_child(card_ui)
-	pozzetto_cards.erase(card_ui)
-
 ## Show correct container (normal or overflow)
 func _show_correct_container():
 	# if exceed overflow, show overflow container, else show normal container
@@ -65,8 +55,12 @@ func _show_correct_container():
 	overflow_container_obj.visible = is_overflow
 	overflow_counter_label.text = str(cards_count)
 
-## Generate pozzetto in scene
-func generate_pozzetto(cards_ui: Array[CardController]):
-	for card_ui in cards_ui:
-		add_hand_card(card_ui)
-		pozzetto_cards.append(card_ui)
+## Add card in pozzetto
+func add_pozzetto_card(card_ui: CardController):
+	pozzetto_container.add_child.call_deferred(card_ui)
+	pozzetto_cards.append(card_ui)
+
+## Remove card in pozzetto
+func remove_pozzetto_card(card_ui: CardController):
+	pozzetto_container.remove_child(card_ui)
+	pozzetto_cards.erase(card_ui)

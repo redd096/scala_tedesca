@@ -1,14 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bk2x7qj8v5mn6"]
+[gd_scene load_steps=5 format=3 uid="uid://bk2x7qj8v5mn6"]
 
+[ext_resource type="Theme" uid="uid://dh75y1pvxkaar" path="res://game_scene/themes/card_theme.tres" id="1_j5c3o"]
 [ext_resource type="Script" uid="uid://bny2v6nu6dwq0" path="res://game_scene/scripts/prefabs_controllers/card_controller.gd" id="1_pvvkm"]
 [ext_resource type="Texture2D" uid="uid://e2bw70nln230" path="res://game_scene/textures/back_card_red.png" id="2_ho0u6"]
 [ext_resource type="Texture2D" uid="uid://4pidu3mb6ni1" path="res://game_scene/textures/front_card_red.png" id="3_la2fe"]
 
 [node name="Card" type="Control" node_paths=PackedStringArray("card_front", "card_back", "front_image", "back_image", "top_left_label", "bottom_right_label")]
+custom_minimum_size = Vector2(50, 75)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 80.0
-offset_bottom = 120.0
+offset_right = 50.0
+offset_bottom = 75.0
+theme = ExtResource("1_j5c3o")
 script = ExtResource("1_pvvkm")
 card_front = NodePath("CardFront")
 card_back = NodePath("CardBack")
@@ -18,6 +21,7 @@ top_left_label = NodePath("CardFront/TopLeftLabel")
 bottom_right_label = NodePath("CardFront/BottomRightLabel")
 
 [node name="CardFront" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -62,34 +66,31 @@ mouse_filter = 2
 [node name="TopLeftLabel" type="Label" parent="CardFront"]
 modulate = Color(1, 0, 0, 1)
 layout_mode = 1
-offset_left = 6.0
-offset_top = 6.0
-offset_right = 17.0
-offset_bottom = 29.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 2.0
+offset_right = 2.0
+offset_bottom = 18.0
+grow_horizontal = 2
 text = "A♥"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="BottomRightLabel" type="Label" parent="CardFront"]
 modulate = Color(1, 0, 0, 1)
 layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
+anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -31.0
-offset_top = -29.0
-offset_right = -6.0
-offset_bottom = -6.0
-grow_horizontal = 0
+offset_left = -2.0
+offset_top = -18.0
+offset_right = -2.0
+grow_horizontal = 2
 grow_vertical = 0
 text = "A♥"
-horizontal_alignment = 1
-vertical_alignment = 1
+horizontal_alignment = 2
+vertical_alignment = 2
 
 [node name="CardBack" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -106,31 +107,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ho0u6")
 expand_mode = 1
-
-[node name="Border" type="ColorRect" parent="CardBack"]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0, 0, 0, 1)
-
-[node name="InnerArea" type="ColorRect" parent="CardBack/Border"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = -2.0
-offset_bottom = -2.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.2, 0.3, 0.8, 1)
 
 [node name="Pattern" type="Label" parent="CardBack"]
 layout_mode = 1
